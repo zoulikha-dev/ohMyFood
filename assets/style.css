@@ -78,4 +78,55 @@ h1 {
 .hero button:hover {
     background: linear-gradient(193.33deg, #f989d9 -11.44%, #9462d0 123.93%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Augmentation de l'ombre portée au survol */
+    border: 1px solid transparent;
+}
+
+/* Section Fonctionnement */
+.container-fonctionnement {
+    width: 100%;
+    height: 228px;
+    margin: 20px 0 0;
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 100px;
+}
+
+.fonctionnement h2 {
+    margin: 20px 20px;
+    font-size: 24px;
+    color: #000000;
+}
+
+.btn-fonctionnement {
+    display: flex;
+}
+
+.btn-fonctionnement .container-btn {
+    position: relative;
+}
+
+.btn-fonctionnement button {
+    background-color: #F6F6F6;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    height: 72px;
+    flex: 1;
+    margin: 0 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.absolute-num {
+    position: absolute;
+    left: -15px;
+    width: 24px;
+    height: 24px;
 }
