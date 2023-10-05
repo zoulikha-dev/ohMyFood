@@ -130,3 +130,75 @@ h1 {
     width: 24px;
     height: 24px;
 }
+
+/* Section restaurants */
+.restaurants {
+    width: 100%;
+    height: 750px;
+    background-color: #F6F6F6;
+}
+
+.restaurants h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 170px;
+    padding: 40px 0 0;
+}
+
+.cards-menu {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 80px 170px;
+
+}
+
+.cards-menu article {
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 15px;
+    flex: 1 1 calc(50% - 25px);
+    height: 251px;
+}
+
+.cards-menu article img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.text-card {
+    margin: 10px;
+}
+
+.text-card h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.text-card p {
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: 300;
+    color: #000000;
+}
+
+.absolute-new {
+    position: absolute;
+    font-weight: 500;
+    font-size: 14px;
+    color: #008766;
+    background-color: #99E2D0;
+    width: 80px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+}
