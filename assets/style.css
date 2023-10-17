@@ -147,7 +147,7 @@ h1 {
     font-size: 24px;
     font-weight: 700;
     color: #000000;
-    margin: 0 170px;
+    margin: 0 100px;
     padding: 40px 0 0;
 }
 
@@ -156,7 +156,7 @@ h1 {
     justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 50px;
-    margin: 80px 170px;
+    margin: 70px 100px;
 
 }
 
@@ -241,7 +241,36 @@ footer {
 
 /* Responsive Tablettes */
 @media (min-width: 769px) and (max-width: 992px) {
-   
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .fonctionnement {
+        margin: 0 20px;
+    }
+
+    .btn-fonctionnement button {
+        flex: initial;
+        gap: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .cards-menu {
+        margin: 40px 60px;
+    }
+
+    .restaurants h2 {
+        margin: 0 60px;
+    }
+
+    .lien-footer a {
+        margin: 0 5px;
+    }
+
+
 
 }
 
@@ -259,7 +288,6 @@ footer {
     }
 
     .hero p {
-        font-size: 18px;
         text-align: center;
         width: 315px;
     }
