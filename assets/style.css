@@ -14,8 +14,19 @@ a {
 }
 
 /* Loader */
+.container-loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOutLoader 8s forwards;
+}
+
 .loader {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -24,7 +35,7 @@ a {
 }
 
 .letter {
-  position: relative;
+  /* position: relative; */
   color: #9356dc;
   letter-spacing: 20px;
   text-transform: uppercase;
@@ -53,6 +64,7 @@ a {
 .loader span:nth-child(7) {
   animation-delay: 0.6s;
 }
+
 @keyframes animate {
   0% {
     filter: blur(0);
@@ -66,6 +78,35 @@ a {
   100% {
     filter: blur(20px);
   }
+}
+
+@keyframes fadeOutLoader {
+  to {
+    opacity: 0;
+  }
+}
+
+/* Ajout de l'animation fadeInContent pour le contenu */
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body.hidden .container,
+body.hidden footer {
+  opacity: 0;
+}
+
+body.hidden .container {
+  animation: fadeInContent 11s forwards;
+}
+
+body.hidden footer {
+  animation: fadeInContent 11s forwards;
 }
 
 /* Header */
