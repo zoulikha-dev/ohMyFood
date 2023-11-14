@@ -22,7 +22,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: fadeOutLoader 8s forwards;
+  animation: fadeOutLoader 3s forwards;
 }
 
 .loader {
@@ -35,7 +35,6 @@ a {
 }
 
 .letter {
-  /* position: relative; */
   color: #9356dc;
   letter-spacing: 20px;
   text-transform: uppercase;
@@ -102,11 +101,11 @@ body.hidden footer {
 }
 
 body.hidden .container {
-  animation: fadeInContent 11s forwards;
+  animation: fadeInContent 9s forwards;
 }
 
 body.hidden footer {
-  animation: fadeInContent 11s forwards;
+  animation: fadeInContent 9s forwards;
 }
 /* FIN LOADER */
 
