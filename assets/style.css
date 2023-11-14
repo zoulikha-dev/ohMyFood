@@ -13,7 +13,7 @@ a {
   text-decoration: none;
 }
 
-/* Loader */
+/* LOADER */
 .container-loader {
   position: fixed;
   width: 100%;
@@ -108,6 +108,7 @@ body.hidden .container {
 body.hidden footer {
   animation: fadeInContent 11s forwards;
 }
+/* FIN LOADER */
 
 /* Header */
 .logo {
