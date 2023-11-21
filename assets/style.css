@@ -282,7 +282,39 @@ h1 {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+}
+
+.btn-like i {
+  content: "\f004";
+  font-size: 22px;
+  position: relative;
+  height: 21px;
+  width: 22px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-like i::before {
+  position: absolute;
+  content: "\f004";
+  top: 21px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.5s;
+  z-index: -1;
+}
+
+.btn-like i:hover::before {
+  top: 0;
 }
 
 /* -------------- Fin Animation j'aime -------------- */

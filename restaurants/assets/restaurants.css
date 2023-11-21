@@ -114,6 +114,7 @@ h1 {
 .price1,
 .price2,
 .price3 {
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
 }
@@ -212,4 +213,44 @@ footer {
 
 .details-menu.menu-show2 {
   animation: slideIn 3s ease 1s forwards;
+}
+
+/* ANIMATION CHECKMARK */
+.checkmark {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(153, 226, 208, 1);
+  width: 0;
+  height: 72px;
+  border-radius: 0 15px 15px 0;
+  opacity: 0;
+  transition: width 0.5s, opacity 0.5s;
+}
+
+.price-checkmark:hover .checkmark {
+  width: 59px;
+  opacity: 1;
+}
+
+.checkmark i {
+  position: absolute;
+  top: 38%;
+  left: 35%;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.price-checkmark:hover .checkmark i {
+  opacity: 1;
+}
+
+.prices {
+  transition: transform 0.5s;
+}
+
+.price-checkmark:hover .prices {
+  transform: translateX(-50px);
 }
