@@ -254,3 +254,10 @@ footer {
 .price-checkmark:hover .prices {
   transform: translateX(-50px);
 }
+
+/* Ajout des points de suspension pour le texte du plat */
+.suspension {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
