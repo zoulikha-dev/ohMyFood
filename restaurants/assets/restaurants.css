@@ -61,7 +61,6 @@ main {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 16px;
 }
 
 h1 {
@@ -72,6 +71,63 @@ h1 {
   text-align: center;
   margin: 30px;
 }
+
+/* ------------ Animation J'aime --------------- */
+.heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heart i {
+  margin: 0 30px;
+}
+
+.btn-like {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-like i {
+  content: "\f004";
+  font-size: 22px;
+  height: 21px;
+  width: 22px;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.btn-like i.fa-regular {
+  position: absolute;
+}
+
+.btn-like i.fa-solid {
+  opacity: 0;
+  top: 0;
+}
+
+.btn-like i:hover {
+  opacity: 1 !important;
+  transition: all 1s;
+}
+
+.btn-like i::before {
+  content: "\f004";
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -------------- Fin Animation j'aime -------------- */
 
 /* Détails prix */
 .section-menu {
@@ -255,9 +311,71 @@ footer {
   transform: translateX(-50px);
 }
 
+.background-menus {
+  position: relative;
+}
+
+.background-menus:hover .checkmark {
+  right: 0;
+  opacity: 1;
+}
+
 /* Ajout des points de suspension pour le texte du plat */
 .suspension {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+
+.background-menus:hover .suspension {
+  max-width: 150px;
+}
+
+/* Responsive Tablettes */
+@media (min-width: 769px) and (max-width: 992px) {
+  .img-hero {
+    height: 275px;
+  }
+
+  .menu h2 {
+    margin: 10px;
+  }
+
+  .lien-footer a {
+    margin: 0 5px;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+  .img-hero {
+    height: 275px;
+  }
+
+  .background-menus {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    height: 186px;
+  }
+
+  .lien-footer {
+    display: flex;
+    flex-direction: column;
+    right: auto;
+    top: 40%;
+    gap: 5px;
+  }
+
+  .lien-footer img {
+    margin: 0 10px 0 0;
+  }
+
+  .logo-footer {
+    top: 35px;
+    left: 20px;
+  }
 }
