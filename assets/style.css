@@ -287,7 +287,6 @@ h1 {
 .btn-like i {
   content: "\f004";
   font-size: 22px;
-  position: relative;
   height: 21px;
   width: 22px;
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
@@ -298,10 +297,22 @@ h1 {
   z-index: 0;
 }
 
-.btn-like i::before {
+.btn-like i.fa-regular {
   position: absolute;
+}
+
+.btn-like i.fa-solid {
+  opacity: 0;
+  top: 0;
+}
+
+.btn-like i:hover {
+  opacity: 1 !important;
+  transition: all 1s;
+}
+
+.btn-like i::before {
   content: "\f004";
-  top: 21px;
   left: 0;
   height: 100%;
   width: 100%;
@@ -309,12 +320,6 @@ h1 {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 0.5s;
-  z-index: -1;
-}
-
-.btn-like i:hover::before {
-  top: 0;
 }
 
 /* -------------- Fin Animation j'aime -------------- */
