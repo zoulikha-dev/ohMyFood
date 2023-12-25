@@ -100,6 +100,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   overflow: hidden;
   z-index: 0;
+  transition: all 1s;
 }
 
 .btn-like i.fa-regular {
@@ -113,7 +114,7 @@ h1 {
 
 .btn-like i:hover {
   opacity: 1 !important;
-  transition: all 1s;
+  transition: all 2s;
 }
 
 .btn-like i::before {
@@ -305,6 +306,7 @@ footer {
 
 .prices {
   transition: transform 0.5s;
+  white-space: nowrap;
 }
 
 .price-checkmark:hover .prices {
@@ -377,5 +379,9 @@ footer {
   .logo-footer {
     top: 35px;
     left: 20px;
+  }
+
+  .background-menus:hover .suspension {
+    max-width: 150px;
   }
 }
