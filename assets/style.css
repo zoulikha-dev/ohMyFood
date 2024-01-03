@@ -6,6 +6,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #353535;
+  margin: 0;
 }
 
 a {
@@ -107,6 +108,7 @@ body.hidden .container {
 body.hidden footer {
   animation: fadeInContent 9s forwards;
 }
+
 /* FIN LOADER */
 
 /* Header */
@@ -295,21 +297,21 @@ h1 {
   -webkit-text-fill-color: transparent;
   overflow: hidden;
   z-index: 0;
-  transition: all 1s;
+  transition: all 1s; /* Transition pour une animation fluide */
 }
 
 .btn-like i.fa-regular {
-  position: absolute;
+  position: absolute; /* Position absolue pour empiler les deux icônes */
 }
 
 .btn-like i.fa-solid {
-  opacity: 0;
+  opacity: 0; /* L'icône remplie est initialement invisible */
   top: 0;
 }
 
 .btn-like i:hover {
-  opacity: 1 !important;
-  transition: all 2s;
+  opacity: 1 !important; /* Rend l'icône remplie visible au survol */
+  transition: all 2s; /* Transition plus longue pour un effet plus prononcé */
 }
 
 .btn-like i::before {
@@ -422,6 +424,11 @@ footer {
 
 /* Mobiles */
 @media screen and (max-width: 768px) {
+  .letter {
+    letter-spacing: 10px;
+    font-size: 60px;
+  }
+
   .hero {
     height: 300px;
   }
@@ -460,7 +467,7 @@ footer {
     flex: initial;
     gap: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     padding: 30px;
     width: 90%;
   }
